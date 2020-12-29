@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import sys
+import argparse
+import os
+
+import landscape_pdf
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", help='PDF file to convert')
+    parser.add_argument("output", help='PDF file to write converted pdf to')
+
+    opts = parser.parse_args(sys.argv[1:])
+    if not os.path.exists(opts.input):
+        print(f'{opts.input} does not exist!')
+        sys.exit(1)
+
+    landscape_pdf.convert_to_landscape(opts.input,
+                                       opts.output)
