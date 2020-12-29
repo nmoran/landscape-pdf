@@ -7,8 +7,9 @@ do not make it easy to read content in landscape. Each
 page is converted to two overlapping pages covering the
 top and bottom of the original page.
 
-[before](imgs/before.png)
-[after](imgs/after.png)
+![before](imgs/before.png)
+
+![after](imgs/after.png)
 
 # Installation
 Can be installed using pip with
